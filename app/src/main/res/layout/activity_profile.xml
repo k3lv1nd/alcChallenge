@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageView_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView_username"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Kelvin David"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_avatar"
+        app:layout_constraintStart_toStartOf="@+id/imageView_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_avatar" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/textView_track_label"
+        app:layout_constraintEnd_toEndOf="@+id/textView_username"
+        app:layout_constraintStart_toStartOf="@+id/textView_username"
+        app:layout_constraintTop_toBottomOf="@+id/textView_username" />
+
+    <TextView
+        android:id="@+id/textView_track_label"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:text="Track:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_track"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/textView_contry_label"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Country:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_track_label"
+        app:layout_constraintStart_toStartOf="@+id/textView_track_label"
+        app:layout_constraintTop_toBottomOf="@+id/textView_track_label" />
+
+    <TextView
+        android:id="@+id/textView_country"
+        android:layout_width="220dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_track"
+        app:layout_constraintStart_toStartOf="@+id/textView_track"
+        app:layout_constraintTop_toBottomOf="@+id/textView_track" />
+
+    <TextView
+        android:id="@+id/textView_email_label"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Email:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_contry_label"
+        app:layout_constraintStart_toStartOf="@+id/textView_contry_label"
+        app:layout_constraintTop_toBottomOf="@+id/textView_contry_label" />
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_country"
+        app:layout_constraintStart_toStartOf="@+id/textView_country"
+        app:layout_constraintTop_toBottomOf="@+id/textView_country" />
+
+    <TextView
+        android:id="@+id/textView_phone_label"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Phone Number:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_email_label"
+        app:layout_constraintStart_toStartOf="@+id/textView_email_label"
+        app:layout_constraintTop_toBottomOf="@+id/textView_email_label" />
+
+    <TextView
+        android:id="@+id/textView_phone"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_email"
+        app:layout_constraintStart_toStartOf="@+id/textView_email"
+        app:layout_constraintTop_toBottomOf="@+id/textView_email" />
+
+    <TextView
+        android:id="@+id/textView_slack_label"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Slack Username:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_phone_label"
+        app:layout_constraintStart_toStartOf="@+id/textView_phone_label"
+        app:layout_constraintTop_toBottomOf="@+id/textView_phone_label" />
+
+    <TextView
+        android:id="@+id/textView_slack"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_phone"
+        app:layout_constraintStart_toStartOf="@+id/textView_phone"
+        app:layout_constraintTop_toBottomOf="@+id/textView_phone" />
+
+    <TextView
+        android:id="@+id/textView_track"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintStart_toEndOf="@+id/textView_track_label"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

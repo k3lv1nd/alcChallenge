@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3259de</color>
+    <color name="colorPrimaryDark">#3259de</color>
+    <color name="colorAccent">#0C0B0C</color>
+    <color name="mainThemeColor">#3259de</color>
+    <color name="colorButtons">#F7AE30</color>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/bubbler_one</item>
+        <item>@font/convergence</item>
+        <item>@font/dekko</item>
+        <item>@font/imprima</item>
+        <item>@font/nova_oval</item>
+    </array>
+</resources>
